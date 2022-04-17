@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="CliWrap" />
+    <Using Include="GiGraph.Dot.Entities.Edges" />
+    <Using Include="GiGraph.Dot.Entities.Graphs" />
+    <Using Include="GiGraph.Dot.Entities.Html.Builder" />
+    <Using Include="GiGraph.Dot.Extensions" />
+    <Using Include="GiGraph.Dot.Types.Fonts" />
+    <Using Include="GiGraph.Dot.Types.Layout" />
+    <Using Include="NuGet.RuntimeModel" />
+    <Using Include="Spectre.Console" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CliWrap" Version="3.4.2" />
+    <PackageReference Include="GiGraph.Dot" Version="2.0.0" />
+    <PackageReference Include="NuGet.Packaging" Version="6.1.0" />
+    <PackageReference Include="Spectre.Console" Version="0.44.0" />
+  </ItemGroup>
+
+</Project>
