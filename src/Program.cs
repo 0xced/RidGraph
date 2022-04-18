@@ -27,7 +27,11 @@ try
         throw new ApplicationException($"No graph was constructed. Make sure that the specified filter{filterDescription} matches at least one runtime identifier in the graph.");
     }
 
-    var input = new RidGraph.DotGraphPipeSource(dotGraph);
+    var input = PipeSource.Create(stream =>
+    {
+        using var writer = new StreamWriter(stream);
+        dotGraph.Build(writer);
+    });
     var dot = Cli.Wrap("dot").WithArguments(new[] { "-Tsvg" }).WithStandardErrorPipe(PipeTarget.ToDelegate(line => errorConsole.WriteLine(line, new Style(Color.DarkOrange))));
     var output = PipeTarget.ToDelegate(AnsiConsole.WriteLine);
 

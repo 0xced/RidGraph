@@ -20,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CliWrap" Version="3.4.2" />
-    <PackageReference Include="GiGraph.Dot" Version="2.0.0" />
+    <PackageReference Include="CliWrap" Version="3.4.3" />
+    <PackageReference Include="GiGraph.Dot" Version="2.0.1" />
     <PackageReference Include="NuGet.Packaging" Version="6.1.0" />
     <PackageReference Include="Spectre.Console" Version="0.44.0" />
   </ItemGroup>
