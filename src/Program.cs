@@ -17,7 +17,7 @@ try
     var dotGraph = new DotGraph
     {
         Label = new DotHtmlBuilder().AppendStyledText(".NET RID Catalog", linkStyle).AppendText(filterDescription).Build(),
-        Hyperlink = { Url = "https://docs.microsoft.com/en-us/dotnet/core/rid-catalog" },
+        Hyperlink = { Url = "https://learn.microsoft.com/en-us/dotnet/core/rid-catalog" },
         Layout = { Direction = DotLayoutDirection.BottomToTop },
     };
     dotGraph.Edges.AddRange(edges);
